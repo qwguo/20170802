@@ -70,7 +70,6 @@ function countDown(j) {
         b_underway();
     } else if ((nts - et) > 0) {
         typeof j.efun == 'function' && j.efun();
-        // o.html('活动已经结束！');
     } else {
         n_underway();
         typeof j.nfun == 'function' && j.nfun();
