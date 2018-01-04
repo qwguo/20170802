@@ -31,14 +31,14 @@ function countDown(j) {
                 h = h < 10 ? '0' + h : h;
                 mi = mi < 10 ? '0' + mi : mi;
                 s = s < 10 ? '0' + s : s;
-                html_ = '<span class="count-time"><i>' + d + '</i><em>ÃÏ</em><i>' + h + '</i><em> ±</em><i>' + mi + '</i><em>∑÷</em><i>' + s + '</i><em>√Î</em></span>';
+                html_ = '<span class="count-time"><i>' + d + '</i><em>Â§©</em><i>' + h + '</i><em>Êó∂</em><i>' + mi + '</i><em>ÂàÜ</em><i>' + s + '</i><em>Áßí</em></span>';
                 o.html(html_);
                 setTimeout(function() {
                     n_underway();
                 }, 1000);
             } else {
                 typeof j.efun == 'function' && j.efun();
-                // o.html('ªÓ∂Ø“—æ≠Ω· ¯£°');
+                // o.html('Ê¥ªÂä®Â∑≤ÁªèÁªìÊùüÔºÅ');
             }
         },
         b_underway = function() {
@@ -54,7 +54,7 @@ function countDown(j) {
                 h = h < 10 ? '0' + h : h;
                 mi = mi < 10 ? '0' + mi : mi;
                 s = s < 10 ? '0' + s : s;
-                html_ = '<span class="count-time"><i>' + d + '</i><em>ÃÏ</em><i>' + h + '</i><em> ±</em><i>' + mi + '</i><em>∑÷</em><i>' + s + '</i><em>√Î</em></span>';
+                html_ = '<span class="count-time"><i>' + d + '</i><em>Â§©</em><i>' + h + '</i><em>Êó∂</em><i>' + mi + '</i><em>ÂàÜ</em><i>' + s + '</i><em>Áßí</em></span>';
                 o.html(html_);
                 setTimeout(function() {
                     b_underway();
@@ -64,13 +64,13 @@ function countDown(j) {
                 typeof j.nfun == 'function' && j.nfun();
             }
         };
-    // ≈–∂œ◊¥Ã¨
+    // Âà§Êñ≠Áä∂ÊÄÅ
     if ((st - nts) > 0) {
         typeof j.sfun == 'function' && j.sfun();
         b_underway();
     } else if ((nts - et) > 0) {
         typeof j.efun == 'function' && j.efun();
-        // o.html('ªÓ∂Ø“—æ≠Ω· ¯£°');
+        // o.html('Ê¥ªÂä®Â∑≤ÁªèÁªìÊùüÔºÅ');
     } else {
         n_underway();
         typeof j.nfun == 'function' && j.nfun();
